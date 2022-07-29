@@ -18,17 +18,9 @@
 /*Tablet view*/
 @media (max-width: 768px) {
 
-    h1 {
-        color: rgb(62, 226, 226);;
-    }
-
-
 }
 
 /*Mobile view*/
 @media (max-width: 600px) {
 
-    h1 {
-        color: rgb(170, 119, 23);;
-    }
 }
