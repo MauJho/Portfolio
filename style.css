@@ -1,0 +1,23 @@
+/*Global View*/
+h1{
+    color: rgb(79, 79, 190);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Tablet view*/
+@media (max-width: 768px) {
+
+    h1 {
+        color: rgb(62, 226, 226);;
+    }
+
+
+}
+
+/*Mobile view*/
+@media (max-width: 600px) {
+
+    h1 {
+        color: rgb(170, 119, 23);;
+    }
+}
