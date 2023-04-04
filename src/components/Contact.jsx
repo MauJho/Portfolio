@@ -7,21 +7,56 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
-   const [form, setForm] = useState(
+  const [form, setForm] = useState(
     {
       name: "",
       email: "",
       message: ""
     }
    );
-
+   
    const [loading, setLoading] = useState(false);
 
-   const handleChange = (e) =>{}
-   const handleSubmit = (e) => {};
+   const handleChange = (e) =>{
+    const {name, value} = e.target;
+    setForm({...form, [name]: value})
+   }
+   const handleSubmit = (e) => {
+     e.preventDefault();
+     setLoading(true);
+     
+     emailjs.send('service_fz0x06h', 
+                  'template_ohex19g',
+                  {
+                    from_name: form.name,
+                    to_name: 'Mauriel',
+                    from_email: form.email,
+                    to_email: 'maurieljng@gmail.com',
+                    message: form.message,
+                  },
+                  'jjmPs6Wr-7AxarcAp')
+                  .then(()=>{
+                    setLoading(false);
+                    alert('Thank you! I will get back to you as soon as possible.');
 
+                    setForm({
+                      name: "",
+                      email: "",
+                      message: ""
+                    })
+                  }, (error)=> {
+                    setLoading(false);
+                    console.log(error);
+                    alert('Something went wrong');
+                  })
+    };
+    //template_ohex19g
+    //service_fz0x06h
+    //jjmPs6Wr-7AxarcAp
+    
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div 
