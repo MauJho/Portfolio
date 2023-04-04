@@ -31,7 +31,7 @@ import TRI from "./TRI.png";
 
 import WebApi from "./WebApi.png";
 import mobileBike from "./mobileBike.png";
-import tripguide from "./tripguide.png";
+import portfolio from "./portfolio.png";
 
 export {
   logo,
@@ -60,7 +60,7 @@ export {
   MMM,
   StarTek,
   mobileBike,
-  tripguide,
+  portfolio,
   asp,
   sqlserver,
   TRI,

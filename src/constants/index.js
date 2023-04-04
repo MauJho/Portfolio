@@ -21,7 +21,7 @@ import {
   HP,
   WebApi,
   mobileBike,
-  tripguide,
+  portfolio,
   threejs,
   asp,
   sqlserver,
@@ -232,16 +232,16 @@ const projects = [
     source_code_link: "https://github.com/MauJho/Mobile-Bike-Repair",
   },
   {
-    name: "Trip Guide",
+    name: "Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Web-based portfolio to show some what I have learned lately",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Three.js",
         color: "green-text-gradient",
       },
       {
@@ -249,8 +249,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: portfolio,
+    source_code_link: "https://github.com/MauJho/Portfolio",
   },
 ];
 
