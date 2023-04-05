@@ -168,9 +168,9 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Anthony",
-    designation: "CFO",
+      "He is a proactive person, who likes challenges and being able to face them successfully, being self-taught in the development of new skills and committed to both personal and professional knowledge.",
+    name: "Anthony Alpizar",
+    designation: "Teacher",
     company: "INA",
     image: "",
   },
