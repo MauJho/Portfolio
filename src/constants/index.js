@@ -171,7 +171,7 @@ const testimonials = [
       "He is a proactive person, who likes challenges and being able to face them successfully, being self-taught in the development of new skills and committed to both personal and professional knowledge.",
     name: "Anthony Alpizar",
     designation: "Teacher",
-    company: "INA",
+    company: "Intuto Nacional De Aprendizaje",
     image: "",
   },
 ];
